@@ -17,6 +17,7 @@ rating:{
 }
 
 const Page = () => {
+
   const [data, setData] = useState<Product[]>([]);
   const [showMessage, setShowMessage] = useState<{ [key: number]: boolean }>({});
 
@@ -37,6 +38,7 @@ const Page = () => {
     fetchData()
   },[]);
   return (
+    <div>
 <div className="p-4 min-h-screen  flex items-center  justify-center ">
   <div className="grid grid-cols-1  lg:grid-cols-4  sm:grid-cols-2 md:grid-cols-3 gap-4">
     {data.map((product)=>(
@@ -64,6 +66,7 @@ const Page = () => {
         )}
       </div>
     ))}
+  </div>
   </div>
   <Footer />
 </div>

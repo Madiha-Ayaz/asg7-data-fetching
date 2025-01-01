@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from "@/component/footer"
+
 interface Book {
     name:string;
     type:string;

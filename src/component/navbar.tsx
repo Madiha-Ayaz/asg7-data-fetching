@@ -8,9 +8,8 @@ const Navbar = () => {
   return (
     <nav
       style={{ backgroundColor: "black", height: "80px", color: "yellow" }}
-      className="bg-black text-white px-6 py-5"
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className=" flex justify-between items-center">
         {/* Desktop Navigation */}
         <ul className="flex gap-8 hidden md:flex space-x-4 text-yellow-200">
           <li>
